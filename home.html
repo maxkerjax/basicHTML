@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>การใช้งาน Bootstrap</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <a class="navbar-brand" href="#">ReactJS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       course
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Bachelor</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Parinya</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">doctorate</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h3>ข่าวกิจกรรม</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="card" style="width: 18rem;padding-right: 10px;">
+                    <img src="assets/images/1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">หมาปึก</h5>
+                        <p class="card-text">ก็มาดิครับพวกแมว</p>
+                        <a href="#" class="btn btn-primary"><i class="far fa-eye"></i> รายละเอียด</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;padding-right: 10px;">
+                    <img src="assets/images/images.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">แมวโง่</h5>
+                        <p class="card-text">ก็มาดิครับพวกหมา</p>
+                        <a href="#"><i class="far fa-eye"></i> รายละเอียด</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <form>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4 col-form-label">ข้อมูลที่1:</label>
+                        <div class="col-sm-8">
+                            <input type="number" name="txt_num1" id="txt_num1">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4 col-form-label">ข้อมูลที่2:</label>
+                        <div class="col-sm-8">
+                            <input type="number" name="txt_num2" id="txt_num2">
+                        </div>
+                    </div>
+                    <div class="form-group" style="text-align: center">
+                        <div class="col-sm-12">
+                            <button for="" class="btn btn-primary" onclick="calNum()">บันทึกข้อมูล</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
+
+<script>
+    function calNum() {
+        var num1 = $("#txt_num1").val();
+        var num2 = $("#txt_num2").val();
+        var sum = Number(num1) + Number(num2);
+        //alert (num1+","+num2);
+        alert(num1 + "+" + num2 + "=" + sum);
+    }
+</script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>การสร้างฟอร์มรับข้อมูล </title> 
+    <link href="style/customstyle.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 align="center" class="colorLabel">ฟอร์มบันทึกข้อมมูลลูกค้า</h1>
+    </header>
+        <form>
+            <table  align="center">
+                <tr>
+                    <td class="txtLabel">คำนำหน้าชื่อ</td>
+                    <td>
+                        <select>
+                            <option>--คำนำหน้าชื่อ</option>
+                            <option value="1">นาย </option>
+                            <option value="2">นาง </option>
+                            <option value="3">นางสาว</option>
+                            <option value="4">เด็กชาย</option>
+                            <option value="5">เด็กหญิง</option>
+                        </select>
+                    </td>
+                    <td class="txtLabel">เพศ: </td>
+                    <td>
+                        <input type="radio" name="gender" value="ชาย"> ชาย
+                        <input type="radio" name="gender" value="หญิง"> หญิง
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                     <td class="txtLabel">ชื่อลูกค้า:</td>
+                     <td><input type="text" placeholder=" "/></td>
+                     <td class="txtLabel">นามสกุล:</tdclass="txtLabel">
+                     <td><input type="text" placeholder=" "/></td>
+                </tr>
+                <tr>
+                    <td class="txtLabel">เบอร์โทรสัพมือถือลูกค้า:</td>
+                    <td><input type="number" placeholder=" "/></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                <tr>
+                    <td class="txtLabel">ที่อยู่ลูกค้า:</td>
+                    <td colspan="4" ><textarea rows="3" cols="60" ></textarea></tdcolspan="4">
+                </tr>
+                 <tr>
+                    <td colspan="4" align="center">
+                       <button>บันทึกข้อมูล</button>
+                       <button>ล้างข้อมูล </button>
+                       <button><a href="index.html" >หน้าหลัก</a></button>
+                    </td>
+                 </tr>
+            </table>
+        </form>
+    </body>
+</html>
