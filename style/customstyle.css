@@ -4,7 +4,8 @@
 }
 
 .colorLabel {
-    color: blueviolet;
+    font-size: 25px;
+    color: rgb(14, 143, 143);
 }
 
 .container-login {
